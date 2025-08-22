@@ -849,7 +849,7 @@ proxy-providers:
       https://raw.githubusercontent.com/Mosifree/-FREE2CONFIG/refs/heads/main/Clash_Reality
     interval: 86400
     include-all: true
-    path: ./proxy.yaml
+    path: ./MihomoSaz9.yaml
     health-check:
       enable: true
       interval: 1800

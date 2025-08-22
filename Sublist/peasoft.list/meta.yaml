@@ -849,7 +849,7 @@ proxy-providers:
       https://raw.githubusercontent.com/peasoft/NoMoreWalls/refs/heads/master/list.meta.yml
     interval: 86400
     include-all: true
-    path: ./proxy.yaml
+    path: ./MihomoSaz43.yaml
     health-check:
       enable: true
       interval: 1800

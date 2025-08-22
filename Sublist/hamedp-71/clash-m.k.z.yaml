@@ -849,7 +849,7 @@ proxy-providers:
       https://raw.githubusercontent.com/hamedp-71/clash-m.k.z/refs/heads/main/hp.yaml
     interval: 86400
     include-all: true
-    path: ./proxy.yaml
+    path: ./MihomoSaz24.yaml
     health-check:
       enable: true
       interval: 1800
