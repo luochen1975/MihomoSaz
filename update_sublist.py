@@ -60,6 +60,15 @@ class ConfigProcessor:
         )
         return pattern.sub(rf'\g<1>{new_url}', template)
 
+    def _replace_proxy_path(self, template: str, new_path: str) -> str:
+        """جایگزینی path در بخش proxy-providers با دقت"""
+        # این الگو به دنبال خط 'include-all:' می‌گردد و سپس خط 'path:' را در خط بعدی جایگزین می‌کند.
+        pattern = re.compile(
+            r"(\n\s+include-all:\s*(?:true|false)\s*\n\s+path:\s*)([^\n]+)",
+            re.IGNORECASE
+        )
+        return pattern.sub(rf'\g<1>{new_path}', template, count=1)
+
     def _generate_readme(self, entries: List[Tuple[str, str]]) -> None:
         """تولید README با لینک مستقیم"""
         md_content = [
@@ -114,9 +123,18 @@ class ConfigProcessor:
 
         # ساخت پوشه‌ی خروجی اصلی
         os.makedirs(self.output_dir, exist_ok=True)
+        
+        # تبدیل دیکشنری به لیست برای داشتن ترتیب ثابت و ایندکس
+        merged_items = list(merged.items())
 
-        for filename, url in merged.items():
+        for idx, (filename, url) in enumerate(merged_items):
+            # مرحله ۱: جایگزینی URL پروکسی
             modified = self._replace_proxy_url(original_template, url)
+            
+            # مرحله ۲: ساخت path جدید و جایگزینی آن در محتوای تغییر یافته
+            new_path = f"./MihomoSaz{idx + 1}.yaml"
+            modified = self._replace_proxy_path(modified, new_path)
+
             output_path = os.path.join(self.output_dir, filename)
             
             # اطمینان از وجود دایرکتوری‌های میانی مسیر خروجی
@@ -129,7 +147,7 @@ class ConfigProcessor:
                 f.write(modified)
 
         # تولید README
-        self._generate_readme(list(merged.items()))
+        self._generate_readme(merged_items)
         logging.info("فایل‌ها با موفقیت ساخته شدند!")
 
 if __name__ == "__main__":
