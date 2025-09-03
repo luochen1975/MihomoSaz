@@ -85,3 +85,5 @@ voken100g/online.yaml|https://raw.githubusercontent.com/voken100g/AutoSSR/master
 voken100g/recent.yaml|https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent
 wudongdefeng_list_raw.yaml|https://raw.githubusercontent.com/10ium/base64-encoder/main/encoded/wudongdefeng_list_raw.txt
 xsfilternet.zaya.io.yaml|https://zaya.io/Xs_Unlimite
+shatakvpn.yaml|https://raw.githubusercontent.com/vpnclashfa-backup/MirrorMan/main/base64/v2nodes.b64
+F0rc3Run_XX.yaml|https://raw.githubusercontent.com/vpnclashfa-backup/MirrorMan/main/base64/F0rc3Run_XX.b64

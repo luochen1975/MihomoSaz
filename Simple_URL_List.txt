@@ -58,10 +58,8 @@ snakem982-clash/meta-2.yaml|https://raw.githubusercontent.com/snakem982/proxypoo
 snakem982-clash/meta.yaml|https://raw.githubusercontent.com/snakem982/proxypool/refs/heads/main/source/clash-meta.yaml
 ts-sf.yaml|https://raw.githubusercontent.com/ts-sf/fly/refs/heads/main/clash
 tt.vg.yaml|https://tt.vg/freeclash
-F0rc3Run_XX.yaml|https://raw.githubusercontent.com/vpnclashfa-backup/subconverter/refs/heads/main/output_configs/clash/F0rc3Run_XX.yaml
 MatinGhanbari_v2ray-configs-super-sub.yaml|https://raw.githubusercontent.com/vpnclashfa-backup/subconverter/refs/heads/main/output_configs/clash/MatinGhanbari_v2ray-configs-super-sub.yaml
 amin_o__o_bitplatform.yaml|https://raw.githubusercontent.com/vpnclashfa-backup/subconverter/refs/heads/main/output_configs/clash/amin_o__o_bitplatform.yaml
 the3rf_com_sub_php.yaml|https://raw.githubusercontent.com/vpnclashfa-backup/subconverter/refs/heads/main/output_configs/clash/the3rf_com_sub_php.yaml
 gheychiamoozesh.yaml|https://raw.githubusercontent.com/vpnclashfa-backup/subconverter/refs/heads/main/output_configs/clash/gheychiamoozesh.yaml
-shatakvpn.yaml|https://raw.githubusercontent.com/vpnclashfa-backup/subconverter/refs/heads/main/output_configs/clash/v2nodes.yaml
 ainita.yaml|https://raw.githubusercontent.com/vpnclashfa-backup/subconverter/refs/heads/main/output_configs/clash/ainita.yaml
