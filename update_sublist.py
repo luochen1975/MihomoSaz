@@ -141,6 +141,7 @@ class ConfigProcessor:
             dir_path = os.path.dirname(output_path)
             if dir_path:
                 os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            
             # نوشتن فایل خروجی
             with open(output_path, "w", encoding="utf-8") as f:
                 f.write(modified)
