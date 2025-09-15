@@ -140,7 +140,8 @@ class ConfigProcessor:
             # اطمینان از وجود دایرکتوری‌های میانی مسیر خروجی
             dir_path = os.path.dirname(output_path)
             if dir_path:
-                os.makedirs(dir_path, exist_ok=True)
+                os.makedirs(os.path.dirname(output_path), exist_ok=True)
+                with open(output_path, "w", encoding="utf-8") as f:
 
             # نوشتن فایل خروجی
             with open(output_path, "w", encoding="utf-8") as f:
